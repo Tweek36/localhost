@@ -2,7 +2,7 @@ $(document).ready(function () {
 	$("#form").on("submit", function (e) {
 		$('.message').text('');
 		if(!$('#phonechekbox').is(':checked')) {
-			$('#phonechekbox').val('')
+			$('#tel').val('')
 		}
 		e.preventDefault();
 		if ($('#login').val().length > 5 && $('#password').val() === $('#passwordchek').val() && $('#password').val().length > 5 && $('#email').val().length > 0 && (($('#phonechekbox').is(':checked') && $('#tel').val().length > 10) || !$('#phonechekbox').is(':checked'))) {
